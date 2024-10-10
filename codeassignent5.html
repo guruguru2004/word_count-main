@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let word="Free Fire offers over  game modes, including Team Deathmatch, Clash Squad, Big Head, Explosive Jump, Cold Steel, Zombie Hunt, Rampage, and Pet Mania However, modes other than Battle Royale, Clash Squad, and Lone Wolf are only available during special events The Battle Royale mode in Free Fire accommodates up to players landing on an island without weapons. They must fight to be the last one standing by scavenging weapons and equipment from buildings Playing this mode in ranked mode will affect their ranking There are  maps to choose from Bermuda, Bermuda Remastered, Kalahari, Purgatory, Alpine, and NeXTerra The mode allows for solo, duo, or squad play";
+        let result=word.replaceAll(",","");
+        console.log(result);
+        let array=result.split(" ");
+        console.log(array);
+        let obj = Object.assign({}, array);
+        console.log(JSON.stringify(obj));
+        let newarray=[];
+        for(let i=0;i<array.length;i++){
+            let obj={};
+            obj[array[i]]=1;
+            newarray.push(obj);
+        }
+        console.log(newarray);
+
+        let newobj={};
+        for(let i=0;i<array.length;i++){
+           if( newobj[i]=newarray[i])
+           {
+
+             newobj[newarray[i]==newarray[i]]+1;
+
+           }
+           else{
+              newobj[newarray[i]]=1;
+           }
+        }
+        console.log(newobj);
+        
+        // let repeadtedwords={};
+        // for(const word in wordcount){
+        //     if(wordcount[word]>1)
+        // {
+        //     newobj[repeadtedwords[word]=wordcount[word]];
+        // }
+        // }
+        // return repeadtedwords;
+        // const b=(newobj);
+        // console.log(b);
+        
+
+        // const total=obj.((previous,current)=>{
+        //     return previous==current;
+        // })
+        // console.log(total);
+
+</script>
+</body>
+</html>
